@@ -1,8 +1,6 @@
 language: java
 jdk:
  - oraclejdk8
-services:
- - postgresql
 before_install:
  - chmod +x mvnw
 deploy:
@@ -10,3 +8,7 @@ deploy:
  api-key:
   secure: $HEROKU_API_KEY
  app: springboot-ci
+
+
+#services:
+# - postgresql
